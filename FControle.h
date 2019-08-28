@@ -7,8 +7,8 @@ class FControle
 	Map Map;
 
 public:
-	void Move(int x, int y);
-	void Select(int x, int y);
+	void Move(int32 x, int32 y);
+	void Select(int32 x, int32 y);
 
 	void Flag();
 };

@@ -2,7 +2,7 @@
 #include "FSearch.h"
 
 
-void FSearch::Find(int St, int _X, int _Y)
+void FSearch::Find(int32 St, int32 _X, int32 _Y)
 {
 	Map Map;
 	if (Map.GetMap(St, _X, _Y) >= One && Map.GetMap(St, _X, _Y) <= Nine)
@@ -33,9 +33,9 @@ void FSearch::Find(int St, int _X, int _Y)
 			if (Map.GetMap(St, _X + X, _Y + Y1) == ' ')
 			{
 				Map.DData[St][_Y + Y1][_X + X] = ' ';
-				for (int r = -1; r < 2; ++r)
+				for (int32 r = -1; r < 2; ++r)
 				{
-					for (int c = -1; c < 2; ++c)
+					for (int32 c = -1; c < 2; ++c)
 					{
 						if (!(r | c))continue;
 						if (Map.GetMap(St, _X + X + c, _Y + Y1 + r) == ' ')
@@ -66,9 +66,9 @@ void FSearch::Find(int St, int _X, int _Y)
 			if (Map.GetMap(St, _X + X, _Y + Y1) == ' ')
 			{
 				Map.DData[St][_Y + Y1][_X + X] = ' ';
-				for (int r = -1; r < 2; ++r)
+				for (int32 r = -1; r < 2; ++r)
 				{
-					for (int c = -1; c < 2; ++c)
+					for (int32 c = -1; c < 2; ++c)
 					{
 						if (!(r | c))continue;
 						if (Map.GetMap(St, _X + X + c, _Y + Y1 + r) == ' ')

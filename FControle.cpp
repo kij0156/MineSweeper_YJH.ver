@@ -2,7 +2,7 @@
 #include "FControle.h"
 #include "FSearch.h"
 
-void FControle::Move(int x, int y)
+void FControle::Move(int32 x, int32 y)
 {
 	C = _getch();
 	switch (C)
@@ -51,16 +51,16 @@ void FControle::Move(int x, int y)
 	cout << "@";
 }
 
-void FControle::Select(int x, int y)
+void FControle::Select(int32 x, int32 y)
 {
 	FSearch Search;
 
 	if (Map.GetMap(Map.Stage, X, Y) == '*')
 	{
 		Map.DData[Map.Stage][y][x] = '*';
-		for (int i = 0; i < y; ++i)
+		for (int32 i = 0; i < y; ++i)
 		{
-			for (int j = 0; j < x; ++j)
+			for (int32 j = 0; j < x; ++j)
 			{
 				if (Map.GetMap(Map.Stage, j, i) == '*')
 				{

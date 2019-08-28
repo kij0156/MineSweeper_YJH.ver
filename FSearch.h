@@ -7,7 +7,7 @@ class FSearch
 
 public:
 
-	void Find(int St, int X, int Y);
+	void Find(int32 St, int32 X, int32 Y);
 
 };
 

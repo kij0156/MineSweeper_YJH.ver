@@ -4,11 +4,11 @@
 
 void FIntro::GetIntro()
 {
-	for (int y = 0; y < Y; ++y)
+	for (int32 y = 0; y < Y; ++y)
 	{
-		for (int x = 0; x < X; ++x)
+		for (int32 x = 0; x < X; ++x)
 		{
-			int Index = X * y + x;
+			int32 Index = X * y + x;
 			cout << Intro[Index];
 		}
 		cout << endl;
