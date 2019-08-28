@@ -1,0 +1,13 @@
+#pragma once
+class FSearch
+{
+	int32 X = 0;
+	int32 Y = 0;
+	int32 Y1 = 0;
+
+public:
+
+	void Find(int St, int X, int Y);
+
+};
+
